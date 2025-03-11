@@ -54,8 +54,8 @@ AI_MidAir_Collision_Avoidance
    ├── sample_flight_data.csv
    ├── model_evaluation_log.csv
 ├── environment.py                           # Custom gym environment definition
-├── train_ppo.py                             # PPO model training script
-├── train_dqn.py                             # DQN model training script
+├── ppo_balanced_actions.py                             # PPO model training script
+├── collision_avoidance_dqn_retrained.py                             # DQN model training script
 ├── evaluation.py                            # Evaluation and hyperparameter tuning
 ├── llm_explanation.py                       # LLM (Gemini) explanation integration
 ├── README.md                                # Project documentation
