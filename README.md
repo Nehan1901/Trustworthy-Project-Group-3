@@ -23,14 +23,14 @@ While live flight data APIs have their limitations, we ensured smooth and reliab
 
 ## Contributions
 
-Nehan – Data Pipeline & Feature Engineering
-Nehan handled the data side of things—cleaning, processing, and preparing flight data for the models. He created key features like Time-to-Collision (TTC) and Altitude Differences, making sure our models had accurate, meaningful inputs. His work was essential for building a reliable system from the ground up.
+1. Nehan – Data Pipeline & Feature Engineering
+- Nehan handled the data side of things—cleaning, processing, and preparing flight data for the models. He created key features like Time-to-Collision (TTC) and Altitude Differences, making sure our models had accurate, meaningful inputs. His work was essential for building a reliable system from the ground up.
 
-Sai Krishna – Model Development & Training
-Sai Krishna focused on building and training our core AI models DQN and PPO for collision avoidance. He fine-tuned them for better performance and tested their ability to predict risks and recommend safe actions. His models form the brain of our system.
+2. Sai Krishna – Model Development & Training
+- Sai Krishna focused on building and training our core AI models DQN and PPO for collision avoidance. He fine-tuned them for better performance and tested their ability to predict risks and recommend safe actions. His models form the brain of our system.
 
-Radha – System Integration & LLM Explanations
-Radha made sure everything worked smoothly together. She connected the data pipeline, AI models, and outputs into one streamlined system. She also integrated the LLM, which turns model decisions into clear, human-friendly explanations that pilots and air traffic controllers can easily understand.
+3. Radha – System Integration & LLM Explanations
+- Radha made sure everything worked smoothly together. She connected the data pipeline, AI models, and outputs into one streamlined system. She also integrated the LLM, which turns model decisions into clear, human-friendly explanations that pilots and air traffic controllers can easily understand.
 ## Key Features
 
  - Live Flight Data Processing: Integration with the OpenSky Network API for real-time data fetching, with intelligent fallback to simulated data for consistency and reliability.
@@ -99,12 +99,12 @@ genai.configure(api_key="YOUR_GEMINI_API_KEY")
 ```
 
 ## References
-"Optimizing the Next Generation Collision Avoidance System for Safe, Suitable, and Acceptable Operational Performance"
+- "Optimizing the Next Generation Collision Avoidance System for Safe, Suitable, and Acceptable Operational Performance"
 Authors: M. A. Vivona, R. J. Moss, and J. Kuchar
 
-PPO Algorithm: Schulman et al. “Proximal Policy Optimization Algorithms” (2017)
+- PPO Algorithm: Schulman et al. “Proximal Policy Optimization Algorithms” (2017)
 
-DQN Algorithm: Mnih et al. “Playing Atari with Deep Reinforcement Learning” (2015)
+- DQN Algorithm: Mnih et al. “Playing Atari with Deep Reinforcement Learning” (2015)
 
 #### Code Sources
 This project was fully developed by our team, including custom data pipelines, collision avoidance environments, reward functions, and integration of PPO/DQN models using Stable-Baselines3. We also implemented an LLM-based explanation system using Google Gemini 1.5 Pro and built a user interface with Flask. While we relied on open-source libraries such as Stable-Baselines3, Gymnasium, Optuna, and the OpenSky Network API, All implementations followed official documentation and were customized for our unique use case.
